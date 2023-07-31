@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="10dp"
+    tools:context=".GameSettingsActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/gameSettingStr"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titleTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Theme.ConnectFour"
+        android:layout_width="184dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:entries="@array/spinnerPresetsStrArr"
+        android:scrollbarSize="10dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/gridSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/connectText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/gridSizeText"
+        app:layout_constraintTop_toBottomOf="@+id/gridSizeText" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onStartButtonClick"
+        android:text="@string/startGameStr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/sizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gridSizeStr"
+        android:textColor="@color/black"
+        android:textSize="@dimen/standardTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/gridSizeText"
+        app:layout_constraintStart_toStartOf="@+id/gridSizeText" />
+
+    <TextView
+        android:id="@+id/connectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connectStr"
+        android:textColor="@color/black"
+        android:textSize="@dimen/standardTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/connectText"
+        app:layout_constraintStart_toStartOf="@+id/connectText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/gravityStr"
+        android:textColor="@color/black"
+        android:textSize="@dimen/standardTextSize"
+        app:layout_constraintStart_toStartOf="@+id/connectText"
+        app:layout_constraintTop_toBottomOf="@+id/connectText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

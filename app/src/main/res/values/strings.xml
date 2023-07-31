@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Connect Four</string>
+    <string name="gameNameStr">Connect 4</string>
+    <string name="resumeStr">Resume</string>
+    <string name="startNewGameStr">Start New Game</string>
+    <string name="exitStr">Exit</string>
+    <string name="gameSettingStr">Game Settings</string>
+    <string name="startGameStr">Start Game</string>
+    <string name="gridSizeStr">Grid Size</string>
+    <string name="connectStr">Connection Length</string>
+    <string name="columnFullStr">Column is full!</string>
+    <string name="occupiedStr">This location is occupied try again.</string>
+    <string name="gravityStr">Gravity</string>
+    <string name="ccmurl">CCM.COM</string>
+    <string name="splashimage">SplashImage</string>
+    <string name="splashscreen">SplashScreen</string>
+    <string name="connect">CONNECT FOUR</string>
+
+
+    <string-array name="spinnerPresetsStrArr">
+        <item>Connect Four</item>
+        <item>Tic Tac Toe</item>
+        <item>Connect Four Big</item>
+    </string-array>
+</resources>
